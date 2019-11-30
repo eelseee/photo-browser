@@ -1,0 +1,6 @@
+{
+  "name": "Photo browser",
+  "description": "Simple photo browser",
+  "repository": "https://github.com/eelseee/photo-browser",
+  "keywords": ["angular", "gallery"]
+}

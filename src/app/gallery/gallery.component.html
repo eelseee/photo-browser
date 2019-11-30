@@ -1,0 +1,22 @@
+<main class="main-content">
+    <!-- Popup for images-->
+    <div id="overlaypop" (click)="onFocusLoss()">
+            <img id="imgpop" src={{selectedPhoto}}>
+    </div>
+
+    <!-- Gallery -->
+    <div class="container-fluid photos">
+        <div class="row align-items-stretch">
+            <!-- Images from JSON -->
+            <div *ngFor="let photo of photos" class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div data-fancybox class="fancybox d-block photo-item" data-caption="test" (click)="onPhotoClick(photo.url)">
+                    <img src={{photo.url}} alt="Image" class="img-fluid Lightbox">
+                    <div class="photo-text-more">
+                        <span class="icon icon-search"></span>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;"></div>
+            </div>
+        </div>
+    </div>
+</main>
